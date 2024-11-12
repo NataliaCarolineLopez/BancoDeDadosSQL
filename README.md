@@ -153,7 +153,10 @@ Para isso usamos o comando 'SELECT'
 Vamos usar dados das tabelas 'livros', 'editora', ' autor', e 'assunto' usando o comando 'JOIN'
 ```SQL
         SELECT livro.titulo AS nome,
-        editora.nome_editora AS editora, autor, nome_autor AS autor. assunto.descricao_assunto AS tema, livro.ano_publicacao AS ano 
+        editora.nome_editora AS editora, 
+        autor, nome_autor AS autor, ]
+        assunto.descricao_assunto AS 
+        tema, livro.ano_publicacao AS ano 
         FROM livro 
         JOIN editora ON livro,id_editora = editora.id_editora 
         JOIN autor ON livro.id_autor = autor.id_autor
